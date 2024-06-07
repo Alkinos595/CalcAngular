@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+header {
+	background-color: black;
+	color: white;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.font-p{
+	font-size: 1.2rem
+}
