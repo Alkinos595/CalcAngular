@@ -14,6 +14,11 @@ export class MultiplicationComponent {
 	public result!: number;
 
 	public mul(): void {
-		this.result = this.num1 * this.num2;
+		if (isNaN(this.num1) || isNaN(this.num2)) {
+			alert("Please enter valid numbers in both fields.");
+		}
+		else {
+			this.result = this.num1 * this.num2;
+		}
 	}
 }

@@ -6,9 +6,9 @@ header {
 footer {
 	background-color: black;
 	color: white;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
+	text-align: center;
+	padding: 10px 0;
 }
 
 .font-p{

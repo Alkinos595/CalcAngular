@@ -8,12 +8,17 @@ import { FormsModule } from '@angular/forms';
 	templateUrl: './division.component.html'
 })
 export class DivisionComponent {
-	
+
 	public num1!: number;
 	public num2!: number;
 	public result!: number;
 
 	public div(): void {
-		this.result = this.num1 / this.num2;
+		if (isNaN(this.num1) || isNaN(this.num2)) {
+			alert("Please enter valid numbers in both fields.");
+		}
+		else {
+			this.result = this.num1 / this.num2;
+		}
 	}
 }

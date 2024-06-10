@@ -14,6 +14,11 @@ export class AdditionComponent {
 	public result!: number;
 
 	public add(): void {
-		this.result = this.num1 + this.num2;
+		if (isNaN(this.num1) || isNaN(this.num2)) {
+			alert("Please enter valid numbers in both fields.");
+		}
+		else {
+			this.result = this.num1 + this.num2;
+		}
 	}
 }
