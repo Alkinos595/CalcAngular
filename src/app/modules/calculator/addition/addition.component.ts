@@ -9,25 +9,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class AdditionComponent {
 
-	/* public num1!:number;
-	public num2!:number;
+	public num1!: number;
+	public num2!: number;
+	public result!: number;
 
-	result: number = 0;
-	public add():number{
-		console.log(this.num1);
-		console.log(this.num2);
-		this.result = (this.num1) + (this.num2);
-		console.log(result);
-		return(result);
-		}  */
-		public num1!: number;
-		public num2!: number;
-		public result: number = 0;
-	  
-		public add(): void {
-		  console.log(this.num1);
-		  console.log(this.num2);
-		  this.result = this.num1 + this.num2;
-		  console.log(this.result);
-		}
+	public add(): void {
+		this.result = this.num1 + this.num2;
+	}
 }

@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
 	selector: 'app-multiplication',
 	standalone: true,
-	imports: [],
+	imports: [FormsModule],
 	templateUrl: './multiplication.component.html'
 })
 export class MultiplicationComponent {
 
+	public num1!: number;
+	public num2!: number;
+	public result!: number;
+
+	public mul(): void {
+		this.result = this.num1 * this.num2;
+	}
 }
