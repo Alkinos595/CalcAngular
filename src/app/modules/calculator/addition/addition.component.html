@@ -5,16 +5,17 @@
 		</p>
 		<div>
 			<label class="col-form-label" for="inputDefault">Write number 1</label>
-			<input type="text" class="form-control" placeholder="e.g. : 1" id="inputDefault">
+			<input type="number" class="form-control" placeholder="e.g. : 1" id="inputDefault" [(ngModel)]="num1">
 		</div>
 		<div>
 			<label class="col-form-label mt-4" for="inputDefault">Write number 2</label>
-			<input type="text" class="form-control" placeholder="e.g. : 2" id="inputDefault">
+			<input type="number" class="form-control" placeholder="e.g. : 2" id="inputDefault" [(ngModel)]="num2">
 		</div>
 		<div class="row">
 			<div class="col text-center">
-				<button type="button" class="btn btn-dark mt-4">Calculate!</button>
+				<button type="button" class="btn btn-dark mt-4" (click)="add()">Calculate!</button>
 			</div>
 		</div>
+		<p>{{result}}</p>
 	</div>
 </div>
